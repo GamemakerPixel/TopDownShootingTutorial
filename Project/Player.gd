@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-var Velocity = Vector2()
-
 export (int) var speed = 500
+
+var Velocity = Vector2()
 
 func _physics_process(delta):
 	if Input.is_action_pressed("ui_right"):
