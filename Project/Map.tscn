@@ -8,11 +8,11 @@
 script = ExtResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 944, 81 )
-
-[node name="Target" parent="." instance=ExtResource( 3 )]
-position = Vector2( 512, 300 )
+position = Vector2( 899, 79 )
 
 [node name="Cooldown" type="Timer" parent="."]
 wait_time = 0.1
+
+[node name="Target" parent="." instance=ExtResource( 3 )]
+position = Vector2( 514, 319 )
 [connection signal="timeout" from="Cooldown" to="." method="_on_Cooldown_timeout"]
